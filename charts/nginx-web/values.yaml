@@ -19,11 +19,11 @@ serverBlock:  |
     server_name _;
     location / {
       return 200 "Hello from NGINX via ArgoCD Helm!";
-      add_hearder Content-Type text/plain;  
+      add_header Content-Type text/plain;  
     }
 
     location /health {
       return 200 "OK";
-      add_hearder Content-Type text/plain;
+      add_header Content-Type text/plain;
     }
   }
